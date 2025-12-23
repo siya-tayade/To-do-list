@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Tasks 🌸</h1>
+            <p id="current-date">Tuesday, Oct 24</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add a lovely task... ✨" autocomplete="off">
+            <button id="add-btn"><i class="fas fa-plus"></i></button>
+        </div>
+        <p id="error-message" class="error-msg"></p>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All 💖</button>
+            <button class="filter-btn" data-filter="active">To Do 🎀</button>
+            <button class="filter-btn" data-filter="completed">Done 🎉</button>
+        </div>
+
+        <ul id="task-list" class="task-list">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+        
+        <div class="empty-state" id="empty-state" style="display: none;">
+            <i class="fas fa-heart"></i>
+            <p>No tasks yet! Time to relax ☕</p>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
